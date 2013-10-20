@@ -39,6 +39,18 @@
 				}
 
 				picImg.src =  matchedEl.getAttribute( "data-src" );
+				
+				var width = matchedEl.getAttribute( "data-width" );
+				var height = matchedEl.getAttribute( "data-height" );
+
+				if (width) {
+					picImg.width =  width;
+				}
+
+				if (height) {
+					picImg.height =  height;
+				}
+				
 				matchedEl.appendChild( picImg );
 			}
 			else if( picImg ){
